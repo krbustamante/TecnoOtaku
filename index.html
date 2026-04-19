@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TecnOku - Descubre tutoriales para Windows y Android, descarga juegos y mira anime gratis">
+    <meta name="keywords" content="anime, tutoriales, juegos, descargas, tecnología">
+    <meta name="author" content="TecnOku">
+
+    <title>TecnOku | Tutoriales, Anime y Juegos Gratis</title>
+    <link rel="shortcut icon" href="/img/TecnOku Logo Nuevo.png" type="image/x-icon">
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Scripts diferidos -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- PARTICLES BACKGROUND -->
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="img/TecnOku Logo Horizontal Nuevo.png" alt="TecnOku" width="180" height="60">
+            </div>
+
+            <ul class="menu-items" id="mainMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/tutoriales">Tutoriales</a></li>
+                <li><a href="/anime">Anime</a></li>
+                <li><a href="/juegos">Juegos</a></li>
+                <li><a href="/youtube">YouTube</a></li>
+                <li><a href="/contacto">Contáctame</a></li>
+                <li class="utils-desktop">
+                    <button id="themeToggle" aria-label="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+                <li class="utils-desktop">
+                    <button id="searchToggle" aria-label="Buscar">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="utils-container">
+                <button class="utils-btn" id="mobileThemeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="utils-btn" id="mobileSearchToggle" aria-label="Buscar">
+                    <i class="fas fa-magnifying-glass"></i>
+                </button>
+                <button class="utils-btn hamburger" id="menuToggle" aria-expanded="false" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <form class="search-bar" id="searchBar" role="search">
+        <input type="search" placeholder="Buscar..." aria-label="Buscar en el sitio">
+        <button type="submit" aria-label="Enviar búsqueda">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+        <!-- DESTACADOS -->
+        <section class="featured-section" aria-labelledby="featuredHeading">
+            <h2 id="featuredHeading" class="sr-only">Contenido destacado</h2>
+
+            <div class="ft-post">
+                <article class="ft-left">
+                    <div class="ft-img-container">
+                        <span class="ft-tag">Anime</span>
+                        <img src="img/El viaje de Chihiro.jpg" alt="El viaje de Chihiro" class="ft-img" width="800"
+                            height="450">
+                        <div class="ft-caption">
+                            <a href=""></a>
+                            <h3 class="ft-title">Cardcaptor Sakura: Clear Card-hen [22/22]</h3>
+                            <p class="ft-date">TecnOku 10/9/2024</p>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="ft-right">
+                    <article class="ft-top">
+                        <div class="ft-img-container">
+                            <span class="ft-tag">Película</span>
+                            <img src="img/Nausicaa Miniatura.jpg" alt="Nausicaä" class="ft-img" width="400"
+                                height="225">
+                            <div class="ft-caption">
+                                <h3 class="ft-title">Cardcaptor Sakura: Clear Card-hen [22/22]</h3>
+                                <p class="ft-date">TecnOku 10/9/2024</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ft-bottom">
+                        <div class="ft-img-container">
+                            <span class="ft-tag">Serie</span>
+                            <img src="img/Sakura Card Captor Clear Card Hen Miniatura.png" alt="Cardcaptor Sakura"
+                                class="ft-img" width="400" height="225">
+                            <div class="ft-caption">
+                                <h3 class="ft-title">Cardcaptor Sakura: Clear Card-hen [22/22]</h3>
+                                <p class="ft-date">TecnOku 10/9/2024</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENIDO Y SIDEBAR -->
+        <div class="main-wrapper">
+            <!-- ARTÍCULOS PRINCIPALES -->
+            <div class="gn-container main-article">
+                <section aria-labelledby="articlesHeading">
+                    <h2 id="articlesHeading" class="elegant-title">Lista de artículos</h2>
+
+                    <div class="items">
+                        <article class="item">
+                            <div class="item-content">
+                                <img src="img/El viaje de Chihiro.jpg" alt="El viaje de Chihiro" class="item-img"
+                                    width="200" height="150">
+                                <div class="item-text">
+                                    <a class="item-title" href="">
+                                        <h1>El viaje de chihiro: Película completa latino</h1>
+                                    </a>
+                                    <div class="item-data">
+                                        <span class="user">TecnOku</span>
+                                        <span class="time">Enero 09, 2025</span>
+                                    </div>
+                                    <p class="item-summary">
+                                        Película El Viaje de Chihiro (Sen to Chihiro no Kamikakushi) en HD por MEGA y
+                                        Mediafire
+                                        completamente gratis en latino y japonés.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="item">
+                            <div class="item-content">
+                                <img src="img/El viaje de Chihiro.jpg" alt="El viaje de Chihiro" class="item-img"
+                                    width="200" height="150">
+                                <div class="item-text">
+                                    <a class="item-title" href="">
+                                        <h1>El viaje de chihiro: Película completa latino</h1>
+                                    </a>
+                                    <div class="item-data">
+                                        <span class="user">TecnOku</span>
+                                        <span class="time">Enero 09, 2025</span>
+                                    </div>
+                                    <p class="item-summary">
+                                        Película El Viaje de Chihiro (Sen to Chihiro no Kamikakushi) en HD por MEGA y
+                                        Mediafire
+                                        completamente gratis en latino y japonés.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="gn-container sidebar" aria-labelledby="sidebarHeading">
+                <h2 id="sidebarHeading" class="sr-only">Sidebar</h2>
+
+                <section class="widgets">
+                    <div class="share">
+                        <h3 class="elegant-title">Sígueme</h3>
+                        <div class="wd-container">
+                            <ul class="social-links">
+                                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="share">
+                        <h3 class="elegant-title">Suscríbete</h3>
+                        <div class="wd-container">
+                            <!-- Formulario de suscripción aquí -->
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-labelledby="footerHeading">
+        <div class="footer-top">
+            <div class="footer-container">
+                <section class="logo-description">
+                    <div>
+                        <img src="img/TecnOku Logo Horizontal Nuevo.png" alt="TecnOku" width="200" height="60">
+                    </div>
+                    <div>
+                        <p>
+                            ¡Descubre tutoriales para Windows y Android, descarga juegos y mira anime gratis en nuestro
+                            sitio web!
+                        </p>
+                    </div>
+                </section>
+
+                <section class="main-links">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/">Inicio</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/tutoriales">Tutoriales</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/anime">Anime</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/juegos">Juegos</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/youtube">YouTube</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="/contacto">Contáctame</a></li>
+                    </ul>
+                </section>
+
+                <section class="share">
+                    <h3 class="footer-title">Comparte</h3>
+                    <ul class="social-footer">
+                        <li class="facebook"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="twitter"><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li class="discord"><a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                        </li>
+                        <li class="instagram"><a href="#" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li class="youtube"><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © <span id="currentYear"></span> TecnOku. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
